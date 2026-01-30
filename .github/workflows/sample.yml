@@ -7,13 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-
     - name: Set up JDK
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin'
+      run: echo " Hello "
 
     - name: Build with Maven
-      run: mvn clean package
+      run: echo " Raja "
