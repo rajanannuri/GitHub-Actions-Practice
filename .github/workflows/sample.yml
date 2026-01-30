@@ -1,6 +1,7 @@
 name: Practice Sample Hello
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
 
 jobs:
   job1:
