@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: Practice Sample Hello
 
 on: workflow_dispatch
 
@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Set up JDK
+    - name: Hello
       run: echo " Hello "
   job2:
     runs-on: ubuntu-latest
     needs: job1
 
     steps:
-    - name: Build with Maven
+    - name: Raja
       run: echo " Raja "
