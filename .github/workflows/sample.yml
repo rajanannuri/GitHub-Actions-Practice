@@ -3,12 +3,16 @@ name: Java CI with Maven
 on: [push]
 
 jobs:
-  build:
+  job1:
     runs-on: ubuntu-latest
 
     steps:
     - name: Set up JDK
       run: echo " Hello "
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1
 
+    steps:
     - name: Build with Maven
       run: echo " Raja "
